@@ -6,6 +6,7 @@
 from __future__ import division, absolute_import, print_function, unicode_literals
 
 from dscli import __version__
+from dscli.dscli import DSCLI
 
 import argparse
 import locale
@@ -20,6 +21,8 @@ def alarm():
             '\'dscli> \'')
 
     args = parser.parse_args()
+
+    dscli = DSCLI(args.cli)
 
     return 0
 
