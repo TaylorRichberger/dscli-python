@@ -12,7 +12,7 @@ import argparse
 import locale
 import sys
 
-def alarm():
+def alarms():
     locale.setlocale(locale.LC_ALL, '')
     parser = argparse.ArgumentParser(description='Run a dscli session and return a bunch of alarms')
     parser.add_argument('-V', '--version', action='version', version=__version__)
@@ -27,4 +27,4 @@ def alarm():
     return 0
 
 if __name__ == '__main__':
-    sys.exit(alarm())
+    sys.exit(alarms())
