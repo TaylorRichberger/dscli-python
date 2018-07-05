@@ -33,4 +33,3 @@ class DSCLI(object):
         lssi = runcommand(child, 'lssi')
         child.sendline('exit')
         child.interact()
-

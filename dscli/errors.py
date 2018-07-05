@@ -1,0 +1,8 @@
+# -*- coding: utf-8 -*-
+# Copyright © 2017 Taylor C. Richberger <taywee@gmx.com>
+# This code is released under the license described in the LICENSE file
+
+from __future__ import division, absolute_import, print_function, unicode_literals
+
+class TagError(RuntimeError):
+    '''An error indicating that an incorrect XML tag was received'''
